@@ -46,10 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\KillDeath.cs" />
      <Compile Include="Assets\LoseBtn.cs" />
      <Compile Include="Assets\PlayBtn.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\Spawner.cs" />
+     <None Include="Assets\c_c_red_alert\readme [LAN].txt" />
+     <None Include="Assets\c_c_red_alert\readme [INET].txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

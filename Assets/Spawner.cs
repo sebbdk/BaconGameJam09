@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour {
 
 	public float spawnCD = 1f;
 	private float lastSpawn = 0;
+	private int fjamp = 0;
 
 	public float spawnCDReduceCD = 10f;
 	private float lastSpawnCDReduceCD = 0;
@@ -25,6 +27,11 @@ public class Spawner : MonoBehaviour {
 				spawn ();
 				spawn ();
 				lastSpawn = Time.time;
+
+				fjamp++;
+				fjamp++;
+
+				GameObject.Find("fjamp").GetComponent<Text>().text = fjamp.ToString() + " FJÆMPS";
 			}
 
 			if (Time.time - lastSpawnCDReduceCD > spawnCDReduceCD) {

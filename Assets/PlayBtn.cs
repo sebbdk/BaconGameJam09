@@ -11,5 +11,7 @@ public class PlayBtn : MonoBehaviour {
 	// Update is called once per frame
 	public void Hide () {
 		gameObject.SetActive (false);
+
+		GameObject.Find ("pd").SetActive (false);
 	}
 }
