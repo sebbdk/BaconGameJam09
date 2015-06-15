@@ -42,13 +42,11 @@
 -define:INCLUDE_IL2CPP
 -define:PLATFORM_SUPPORTS_MONO
 -define:RENDER_SOFTWARE_CURSOR
--define:UNITY_STANDALONE_LINUX
--define:UNITY_STANDALONE
--define:UNITY_STANDALONE_LINUX_API
+-define:UNITY_WEBPLAYER
 -define:ENABLE_SUBSTANCE
+-define:WEBPLUG
 -define:ENABLE_TEXTUREID_MAP
 -define:ENABLE_RUNTIME_GI
--define:ENABLE_EGL
 -define:ENABLE_MOVIES
 -define:ENABLE_NETWORK
 -define:ENABLE_MONO
@@ -63,5 +61,3 @@
 'Assets/PlayBtn.cs'
 'Assets/Player.cs'
 'Assets/Spawner.cs'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

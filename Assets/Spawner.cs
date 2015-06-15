@@ -24,8 +24,10 @@ public class Spawner : MonoBehaviour {
 	void Update () {
 		if (started) {
 			if (Time.time - lastSpawn > spawnCD) {
-				spawn ();
-				spawn ();
+
+				for(int x = 0; x < 10; x++) {
+					spawn ();
+				}
 				lastSpawn = Time.time;
 
 				fjamp++;
@@ -44,7 +46,7 @@ public class Spawner : MonoBehaviour {
 	void spawn() {
 		GameObject murder = Instantiate (spawnables [Mathf.RoundToInt (Random.Range (0, spawnables.Length))]);
 
-		Vector3 offset = new Vector3 (Random.Range (-2, 2), Random.Range (2, -2), 0);
+		Vector3 offset = new Vector3 (Random.Range (-5, 5), Random.Range (5, -5), 0);
 		murder.transform.position = this.transform.position + offset;
 
 		murder.GetComponent<Rigidbody> ().velocity = new Vector3(0,0, -20f);

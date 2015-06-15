@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
 		
 			Vector3 newPos = Vector3.Lerp(transform.position, pos, 1.5f*Time.deltaTime);
 
-			if(newPos.x <= 2 && newPos.x >= -2 && newPos.y <= 2 && newPos.y >= -2) {
+			if(newPos.x <= 2 && newPos.x >= -4 && newPos.y <= 4 && newPos.y >= -2) {
 				transform.position = newPos;
 			}
 		}
